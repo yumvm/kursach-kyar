@@ -1,0 +1,121 @@
+<!DOCTYPE html> <!-- Объявляем стандарт HTML5 -->
+<html lang="ru"> <!-- Определяем основной язык страницы (русский) -->
+<head>  
+  <meta charset="UTF-8"> <!-- Указываем кодировку UTF-8 для корректного отображения символов -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Оптимизируем страницу для мобильных устройств -->
+  <title>Фон с градиентом, бургерное меню и форма связи</title> <!-- Заголовок страницы, отображаемый во вкладке браузера -->
+
+  <!-- Подключение CSS-стилей -->
+  <link rel="stylesheet" href="main.css"> <!-- Основной файл стилей -->
+
+  <!-- Подключение jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- Подключаем библиотеку jQuery для удобной работы с DOM и обработкой событий -->
+  <script defer src="main.js"></script> <!-- Подключаем внешний JavaScript-файл (defer загружает его после HTML) -->
+</head>
+
+<body>
+  <!-- Верхнее меню -->
+  <nav class="background-menu"> <!-- Контейнер навигационного меню -->
+    <ul> <!-- Список ссылок -->
+      <li><a href="main.html">Главная</a></li> <!-- Ссылка на главную страницу -->
+      <li><a href="FQ.html">О нас</a></li> <!-- Ссылка на страницу "О нас" -->
+      <li><a href="delivery.html">Доставка</a></li> <!-- Ссылка на страницу доставки -->
+      <li><a href="Agreement.html">Пользовательское соглашение</a></li> <!-- Ссылка на страницу соглашения -->
+      <li><a href="menu.html">Выбор вида товара</a></li> <!-- Ссылка на страницу выбора товара -->
+    </ul>
+  </nav>
+
+  <!-- Бургерное меню -->
+  <button class="burger-button">≡</button> <!-- Кнопка открытия бургерного меню -->
+
+  <!-- Затемнённая область -->
+  <div class="overlay"></div> <!-- Элемент, создающий затемнение экрана при открытии бургерного меню -->
+
+  <!-- Контейнер бургерного меню -->
+  <div class="burger-menu">
+    <p class="burgerP">Выберите интересующую вас категорию</p> <!-- Заголовок меню -->
+    <a href="Vegetables.html">Овощи</a> <!-- Ссылки на категории товаров -->
+    <a href="Fruits.html">Фрукты</a>
+    <a href="Drinks.html">Напитки</a>
+    <a href="Dumplings.html">Пельмени</a>
+  </div>
+
+  <!-- Основной контент страницы -->
+  <div class="content">
+    <h1>Ого, здрасьте!</h1> <!-- Заголовок страницы -->
+    <p>Прикольная менюшка справа и сверху</p> <!-- Описание страницы -->
+
+    <!-- Форма для связи -->
+    <div class="form-container">
+      <h1>Контактная форма</h1> <!-- Заголовок формы -->
+      <form id="contactForm"> <!-- Форма с идентификатором "contactForm" -->
+
+        <!-- Выбор типа лица -->
+        <div class="person-type">
+          <p>Выберите тип лица:</p> <!-- Заголовок -->
+          <div class="person-options"> <!-- Радиокнопки для выбора типа лица -->
+            <label>
+              <input type="radio" name="personType" value="individual" checked> Физическое лицо <!-- Выбор "Физическое лицо", по умолчанию активен -->
+            </label>
+            <label>
+              <input type="radio" name="personType" value="legal"> Юридическое лицо <!-- Выбор "Юридическое лицо" -->
+            </label>
+          </div>
+        </div>
+
+        <!-- Форма для физического лица -->
+        <div id="individualForm" class="form-section"> <!-- Блок формы для физических лиц -->
+          <label>
+            Имя:
+            <input type="text" name="name" placeholder="Введите ваше имя" required> <!-- Поле для имени (обязательное) -->
+          </label>
+          <label>
+            Телефон:
+            <input type="tel" name="phone" placeholder="Введите номер телефона" required> <!-- Поле для номера телефона -->
+          </label>
+          <label>
+            Электронная почта:
+            <input type="email" name="email" placeholder="Введите адрес электронной почты" required> <!-- Поле для email -->
+          </label>
+        </div>
+
+        <!-- Форма для юридического лица -->
+        <div id="legalForm" class="form-section" style="display: none;"> <!-- Блок формы для юридических лиц, скрытый по умолчанию -->
+          <label>
+            Название организации:
+            <input type="text" name="companyName" placeholder="Введите название организации" required>
+          </label>
+          <label>
+            ИНН:
+            <input type="text" name="inn" placeholder="Введите ИНН" required>
+          </label>
+          <label>
+            Контактное лицо:
+            <input type="text" name="contactPerson" placeholder="Введите контактное лицо" required>
+          </label>
+          <label>
+            Телефон:
+            <input type="tel" name="phone" placeholder="Введите номер телефона" required>
+          </label>
+        </div>
+
+        <!-- Выпадающий список -->
+        <label>
+          Тип товаров, которые вас интересуют:
+          <select name="productType" required> <!-- Поле выбора типа товаров -->
+            <option value="" disabled selected>Выберите товар</option> <!-- Опция-заглушка -->
+            <option value="vegetables">Овощи</option>
+            <option value="fruits">Фрукты</option>
+            <option value="drinks">Напитки</option>
+            <option value="dumplings">Пельмени</option>
+            <option value="all">Все товары</option>
+          </select>
+        </label>
+
+        <!-- Кнопка отправки формы -->
+        <button type="submit">Отправить</button> <!-- Кнопка отправки данных формы -->
+      </form>
+    </div>
+  </div>
+</body>
+</html>

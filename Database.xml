@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <Category type="Vegetables">
+        <!-- Огурцы -->
+        <product type="Cucumbers">
+            <name>Огурцы среднеплодые</name>
+            <price>От 1р</price>
+            <amount>От 200кг</amount>
+            <image>MiddleCucumbers.jpg</image>
+            <suppliers>ОАО "Тепличный комбинат Мачулищи"</suppliers>
+        </product>
+        <product type="Cucumbers">
+            <name>Огурцы короткоплодные</name>
+            <price>От 1.2р</price>
+            <amount>От 150кг</amount>
+            <image>ShortCucumbers.jpg</image>
+            <suppliers>СПК "Зеленый лист"</suppliers>
+        </product>
+        <product type="Cucumbers">
+            <name>Огурцы длинноплодные</name>
+            <price>От 1.5р</price>
+            <amount>От 250кг</amount>
+            <image>LongCucumbers.jpg</image>
+            <suppliers>ООО "ФермерГрупп"</suppliers>
+        </product>
+
+        <!-- Помидоры -->
+        <product type="Tomatoes">
+            <name>Помидоры черри</name>
+            <price>От 2.5р</price>
+            <amount>От 100кг</amount>
+            <image>CherryTomatoes.jpg</image>
+            <suppliers>АгроСоюз "Красный дар"</suppliers>
+        </product>
+        <product type="Tomatoes">
+            <name>Помидоры розовые</name>
+            <price>От 2р</price>
+            <amount>От 120кг</amount>
+            <image>PinkTomatoes.jpg</image>
+            <suppliers>СПК "ТоматоФарм"</suppliers>
+        </product>
+        <product type="Tomatoes">
+            <name>Помидоры сливовидные</name>
+            <price>От 1.8р</price>
+            <amount>От 140кг</amount>
+            <image>PlumTomatoes.jpg</image>
+            <suppliers>ООО "Тепличное хозяйство"</suppliers>
+        </product>
+
+        <!-- Перцы -->
+        <product type="Peppers">
+            <name>Перец болгарский красный</name>
+            <price>От 3р</price>
+            <amount>От 100кг</amount>
+            <image>RedBellPepper.jpg</image>
+            <suppliers>СПК "Солнечная долина"</suppliers>
+        </product>
+        <product type="Peppers">
+            <name>Перец болгарский жёлтый</name>
+            <price>От 3.2р</price>
+            <amount>От 90кг</amount>
+            <image>YellowBellPepper.jpg</image>
+            <suppliers>ООО "АгроПлант"</suppliers>
+        </product>
+        <product type="Peppers">
+            <name>Перец острый зелёный</name>
+            <price>От 2.8р</price>
+            <amount>От 80кг</amount>
+            <image>GreenHotPepper.jpg</image>
+            <suppliers>ОАО "Фермерские продукты"</suppliers>
+        </product>
+    </Category>
+    <Category type="Fruits">
+        <!-- Фрукты -->
+        <product type="Apples">
+            <name>Яблоки Гренни Смит</name>
+            <price>От 2.5р</price>
+            <amount>От 100кг</amount>
+            <image>GrannySmithApples.jpg</image>
+            <suppliers>ООО "Садовые Фрукты"</suppliers>
+        </product>
+        <product type="Apples">
+            <name>Яблоки Голден</name>
+            <price>От 2.8р</price>
+            <amount>От 120кг</amount>
+            <image>GoldenApples.jpg</image>
+            <suppliers>СПК "Фруктовый Рай"</suppliers>
+        </product>
+        <product type="Oranges">
+            <name>Апельсины сочные</name>
+            <price>От 3р</price>
+            <amount>От 150кг</amount>
+            <image>JuicyOranges.jpg</image>
+            <suppliers>ОАО "Тропические Фрукты"</suppliers>
+        </product>
+        <product type="Bananas">
+            <name>Бананы экстра-класса</name>
+            <price>От 2.2р</price>
+            <amount>От 200кг</amount>
+            <image>PremiumBananas.jpg</image>
+            <suppliers>ФермерГрупп "Экзотика"</suppliers>
+        </product>
+        <product type="Pears">
+            <name>Груши Конференция</name>
+            <price>От 2.5р</price>
+            <amount>От 130кг</amount>
+            <image>ConferencePears.jpg</image>
+            <suppliers>ООО "БелФрукт"</suppliers>
+        </product>
+        <product type="Grapes">
+            <name>Виноград Кишмиш</name>
+            <price>От 3.5р</price>
+            <amount>От 90кг</amount>
+            <image>KishmishGrapes.jpg</image>
+            <suppliers>СПК "Виноградный сад"</suppliers>
+        </product>
+        <product type="Peaches">
+            <name>Персики свежие</name>
+            <price>От 4р</price>
+            <amount>От 80кг</amount>
+            <image>FreshPeaches.jpg</image>
+            <suppliers>ООО "Солнечные фрукты"</suppliers>
+        </product>
+        <product type="Plums">
+            <name>Сливы венгерка</name>
+            <price>От 3р</price>
+            <amount>От 140кг</amount>
+            <image>HungarianPlums.jpg</image>
+            <suppliers>ОАО "Фруктовый двор"</suppliers>
+        </product>
+        <product type="Cherries">
+            <name>Черешня сладкая</name>
+            <price>От 5р</price>
+            <amount>От 60кг</amount>
+            <image>SweetCherries.jpg</image>
+            <suppliers>СПК "Черешневый сад"</suppliers>
+        </product>
+    </Category>
+
+    <Category type="Drinks">
+        <!-- Напитки -->
+        <product type="Juice">
+            <name>Сок апельсиновый</name>
+            <price>От 2.5р</price>
+            <amount>От 50л</amount>
+            <image>OrangeJuice.jpg</image>
+            <suppliers>ООО "Фреш Дринк"</suppliers>
+        </product>
+        <product type="Juice">
+            <name>Сок яблочный</name>
+            <price>От 2.2р</price>
+            <amount>От 60л</amount>
+            <image>AppleJuice.jpg</image>
+            <suppliers>СПК "Соки Природы"</suppliers>
+        </product>
+        <product type="MineralWater">
+            <name>Минеральная вода</name>
+            <price>От 1.5р</price>
+            <amount>От 100л</amount>
+            <image>MineralWater.jpg</image>
+            <suppliers>ОАО "Живой источник"</suppliers>
+        </product>
+        <product type="Tea">
+            <name>Чай зеленый</name>
+            <price>От 3р</price>
+            <amount>От 30кг</amount>
+            <image>GreenTea.jpg</image>
+            <suppliers>ООО "Чайные традиции"</suppliers>
+        </product>
+        <product type="Tea">
+            <name>Чай черный</name>
+            <price>От 2.8р</price>
+            <amount>От 25кг</amount>
+            <image>BlackTea.jpg</image>
+            <suppliers>СПК "Чайный дом"</suppliers>
+        </product>
+        <product type="Coffee">
+            <name>Кофе молотый</name>
+            <price>От 4.5р</price>
+            <amount>От 40кг</amount>
+            <image>GroundCoffee.jpg</image>
+            <suppliers>ОАО "Кофейная мастерская"</suppliers>
+        </product>
+        <product type="Coffee">
+            <name>Кофе зерновой</name>
+            <price>От 5р</price>
+            <amount>От 35кг</amount>
+            <image>BeanCoffee.jpg</image>
+            <suppliers>ООО "Элитный кофе"</suppliers>
+        </product>
+        <product type="Lemonade">
+            <name>Лимонад классический</name>
+            <price>От 1.8р</price>
+            <amount>От 80л</amount>
+            <image>ClassicLemonade.jpg</image>
+            <suppliers>СПК "Фруктовые напитки"</suppliers>
+        </product>
+        <product type="Lemonade">
+            <name>Лимонад клубничный</name>
+            <price>От 2р</price>
+            <amount>От 75л</amount>
+            <image>StrawberryLemonade.jpg</image>
+            <suppliers>ООО "Вкус природы"</suppliers>
+        </product>
+    </Category>
+
+    <Category type="Dumplings">
+        <!-- Пельмени -->
+        <product type="Dobrovskie with beef">
+            <name>"Добровские" с говядиной</name>
+            <price>От 3р</price>
+            <amount>От 30кг</amount>
+            <image>Добровские с говядиной.jpg</image>
+            <suppliers>ООО "«ПровитБел»"</suppliers>
+        </product>
+        <product type="Dobrovskie classics">
+            <name>"Добровские" классика</name>
+            <price>От 3р</price>
+            <amount>От 25кг</amount>
+            <image>Добровские классика.jpg</image>
+            <suppliers>ООО "«ПровитБел»"</suppliers>
+        </product>
+        <product type="Dobrovskie with beef and pork">
+            <name>"Добровские" с говядиной и свининой</name>
+            <price>От 3р</price>
+            <amount>От 35кг</amount>
+            <image>Добровские с говядиной и свининой.jpg</image>
+            <suppliers>ООО "«ПровитБел»"</suppliers>
+        </product>
+        <product type="Dobrovskie selected">
+            <name>"Добровские" отборные</name>
+            <price>От 4р</price>
+            <amount>От 30кг</amount>
+            <image>Добровские отборные.jpg</image>
+            <suppliers>ООО "«ПровитБел»"</suppliers>
+        </product>
+        <product type="Dobrovskie real">
+            <name>"Добровские" настоящие</name>
+            <price>От 4р</price>
+            <amount>От 30кг</amount>
+            <image>Добровские настоящие.jpg</image>
+            <suppliers>ООО "«ПровитБел»"</suppliers>
+        </product>
+        <product type="Dobrovskie Clubfoot">
+            <name>"Добровские" Косолапый</name>
+            <price>От 2.5р</price>
+            <amount>От 30кг</amount>
+            <image>Добровские Косолапый.jpg</image>
+            <suppliers>ООО "«ПровитБел»"</suppliers>
+        </product>
+        <product type="Belarusian cornflower with beef and pork">
+            <name>"Беларусский василёк" с говядиной и свининой</name>
+            <price>От 6р</price>
+            <amount>От 30кг</amount>
+            <image>Беларусский василёк с говядиной и свинино.jpg</image>
+            <suppliers>ООО "«ПровитБел»"</suppliers>
+        </product>
+        <product type="Belarusian cornflower with beef">
+            <name>"Беларусский василёк" с говядиной</name>
+            <price>От 6р</price>
+            <amount>От 30кг</amount>
+            <image>Беларусский василёк с говядиной.jpg</image>
+            <suppliers>ООО "«ПровитБел»"</suppliers>
+        </product>
+        <product type="Dobrovskie GOURMET">
+            <name>"Добровские" ГУРМАН</name>
+            <price>От 6р</price>
+            <amount>От 30кг</amount>
+            <image>Добровские ГУРМАН.jpg</image>
+            <suppliers>ООО "«ПровитБел»"</suppliers>
+        </product>
+        <product type="Dobrovskie pads">
+            <name>"Добровские" подушечки</name>
+            <price>От 2р</price>
+            <amount>От 30кг</amount>
+            <image>Добровские подушечки.jpg</image>
+            <suppliers>ООО "«ПровитБел»"</suppliers>
+        </product>
+    </Category>
+</products>

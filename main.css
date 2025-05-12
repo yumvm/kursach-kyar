@@ -1,0 +1,233 @@
+/* Главный фон */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(0deg, black, red);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Убираем горизонтальный скроллинг */
+  }
+  
+  .content {
+    padding: 60px 20px;
+    transition: filter 0.3s ease-in-out;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Эффект размытия для контента */
+  .blurred {
+    filter: blur(5px);
+  }
+  
+  /* Верхнее меню */
+  .background-menu {
+    position: fixed; /* Меню фиксировано сверху */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333; /* Темный фон меню */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1001; /* На переднем плане */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Тень для эффекта */
+  }
+  @media (max-width: 600px) {
+  .background-menu li a{
+    max-width: 15%;
+    font-size: 12px;
+  }
+}
+  .background-menu ul {
+    width: 90%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .background-menu li {
+    display: inline-flex;
+    margin: 0 15px;
+  }
+  
+  .background-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .background-menu a:hover {
+    color: #ddd; /* Цвет ссылки при наведении */
+  }
+  
+  /* Бургерная кнопка */
+  .burger-button {
+    position: fixed;
+    top: 100px; /* Смещаем кнопку вниз */
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .burger-button:hover {
+    background-color: #555;
+  }
+  
+  /* Бургерное меню */
+  .burger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(160deg, black, red); /* Градиент для меню */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем горизонтально */
+    justify-content: center; /* Центрируем вертикально */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .burger-menu.open {
+    transform: translateX(0);
+  }
+  
+  .burger-menu p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #ddd;
+  }
+  
+  .burger-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #fff; /* Обводка для ссылок */
+    border-radius: 5px; /* Скругленные углы */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .burger-menu a:hover {
+    background-color: rgba(255, 0, 0, 0.7); /* Красный фон при наведении */
+    border-color: rgba(255, 255, 255, 0.7); /* Меняем цвет обводки */
+  }
+  
+  /* Затемнённая область */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 998;
+  }
+  
+  .overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  /* Контактная форма */
+  .form-container {
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон формы */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень формы */
+    max-width: 400px;
+    margin: 20px auto;
+    color: white;
+  }
+ /* Стили для описания выбора типа лица */
+.person-type p {
+    margin: 0; /* Убираем отступы вокруг параграфа */
+    font-size: 16px; /* Устанавливаем размер шрифта */
+    color: white; /* Делаем текст белым */
+    margin-bottom: 5px; /* Добавляем небольшой отступ снизу для разделения текста и радио-кнопок */
+}
+  
+  .person-options {
+    display: flex;
+    justify-content: start; /* Располагаем элементы в строку */
+    gap: 20px; /* Отступы между радиокнопками */
+  }
+  
+/* Стили для контейнера с выбором типа лица */
+.person-options label {
+    display: flex; /* Используем flexbox для удобного выравнивания элементов */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    color: white; /* Делаем текст белым */
+    font-size: 14px; /* Устанавливаем размер шрифта */
+}
+  
+  /* Стили для радиокнопок */
+input[type="radio"] {
+    margin-right: 5px; /* Добавляем отступ справа между радиокнопкой и текстом */
+}
+  
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  
+  /* Стили для меток (label) */
+label {
+    display: block; /* Превращаем метку в блочный элемент (она занимает всю ширину) */
+    margin: 10px 0; /* Добавляем вертикальный отступ сверху и снизу */
+}
+  
+  input, select, button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  button {
+    background: red;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: darkred;
+  }
+  /* Стили для активного состояния полей ввода и селекторов */
+  input:focus, select:focus {
+    outline: 2px solid red; /* Добавляем красную обводку, когда элемент в фокусе */
+}
+  P{
+    color: white;
+    text-align: center;
+  }

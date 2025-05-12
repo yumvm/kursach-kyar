@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- Определяем тип документа как HTML5 -->
+<html lang="ru"> <!-- Указываем язык страницы - русский -->
+<head>  
+  <meta charset="UTF-8"> <!-- Кодировка UTF-8 для корректного отображения символов -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Оптимизация страницы для мобильных устройств -->
+  <title>Выбор категории товаров</title> <!-- Заголовок страницы -->
+
+  <!-- Подключение CSS-стилей -->
+  <link rel="stylesheet" href="main.css"> <!-- Основные стили -->
+  <link rel="stylesheet" href="menu.css"> <!-- Стили для меню и карточек товаров -->
+
+  <!-- Подключение jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- jQuery для удобной работы с DOM -->
+  <script defer src="non_main.js"></script> <!-- Подключение внешнего JS-файла -->
+</head>
+
+<body>
+  <!-- Верхнее меню -->
+  <nav class="background-menu"> <!-- Навигационное меню -->
+    <ul> <!-- Список ссылок -->
+      <li><a href="main.html">Главная</a></li> <!-- Ссылка на главную страницу -->
+      <li><a href="FQ.html">О нас</a></li> <!-- Ссылка на страницу "О нас" -->
+      <li><a href="delivery.html">Доставка</a></li> <!-- Информация о доставке -->
+      <li><a href="Agreement.html">Пользовательское соглашение</a></li> <!-- Условия использования -->
+      <li><a href="menu.html">Выбор вида товара</a></li> <!-- Меню выбора товаров -->
+    </ul>
+  </nav>
+
+  <!-- Бургерное меню -->
+  <button class="burger-button">≡</button> <!-- Кнопка открытия бургерного меню -->
+  <div class="overlay"></div> <!-- Затемнённая область при открытии меню -->
+  <div class="burger-menu"> <!-- Контейнер бургерного меню -->
+    <p class="burgerP">Выберите интересующую вас категорию</p> <!-- Текст-заголовок бургерного меню -->
+    <a href="Vegetables.html">Овощи</a> <!-- Ссылки на категории товаров -->
+    <a href="Fruits.html">Фрукты</a>
+    <a href="Drinks.html">Напитки</a>
+    <a href="Dumplings.html">Пельмени</a>
+  </div>
+
+  <!-- Секция выбора категории товаров -->
+  <div class="category-selection"> <!-- Контейнер для выбора категории товаров -->
+    <h2>Выберите категорию товаров</h2> <!-- Заголовок раздела -->
+    <div class="category-cards"> <!-- Контейнер с карточками товаров -->
+      <a href="Vegetables.html" class="category-card"> <!-- Карточка "Овощи" -->
+        <img src="images/vegetables.jpg" alt="Овощи"> <!-- Изображение овощей -->
+        <span>Овощи</span> <!-- Текстовое название категории -->
+      </a>
+      <a href="Fruits.html" class="category-card"> <!-- Карточка "Фрукты" -->
+        <img src="images/fruits.jpg" alt="Фрукты"> <!-- Изображение фруктов -->
+        <span>Фрукты</span>
+      </a>
+      <a href="Drinks.html" class="category-card"> <!-- Карточка "Напитки" -->
+        <img src="images/drinks.jpg" alt="Напитки"> <!-- Изображение напитков -->
+        <span>Напитки</span>
+      </a>
+      <a href="Dumplings.html" class="category-card"> <!-- Карточка "Пельмени" -->
+        <img src="images/dumplings.jpg" alt="Пельмени"> <!-- Изображение пельменей -->
+        <span>Пельмени</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
