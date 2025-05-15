@@ -231,3 +231,36 @@ label {
     color: white;
     text-align: center;
   }
+  /* Верхний блок с логотипом */
+.header {
+  top: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f62525;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f3d1d1;
+}
+
+.company-tagline {
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 10px;
+}
